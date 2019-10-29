@@ -1,0 +1,32 @@
+package blockingQueue;
+
+import java.util.concurrent.*;
+
+class Buffer{
+	private BlockingQueue<Integer> queue = new LinkedBlockingQueue<>(10);//bounded queue
+	
+	public void addItem(int item) {
+		
+	}
+	
+	public int getItem() {
+		int item = 0;
+		try {
+			item = queue.take();
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
+		
+		return item;
+	}
+}
+
+
+public class BlockingQueueThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package blockingQueue;
+
+import java.util.concurrent.*;
+
+class Buffer{
+	private BlockingQueueThread queue = new LinkedBlockingQueue<>();
+}
+
+
+public class BlockingQueue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
